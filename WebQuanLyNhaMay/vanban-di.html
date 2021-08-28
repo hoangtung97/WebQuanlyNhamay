@@ -1,0 +1,473 @@
+﻿<!doctype html>
+<html class="no-js " lang="en">
+
+
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+<meta name="description" content="Responsive Bootstrap 4 and web Application ui kit.">
+
+<title>Quản lý nhà máy</title>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<!-- Favicon-->
+<link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="assets/plugins/footable-bootstrap/css/footable.bootstrap.min.css">
+<link rel="stylesheet" href="assets/plugins/footable-bootstrap/css/footable.standalone.min.css">
+<!-- Custom Css -->
+<link rel="stylesheet" href="assets/css/style.min.css">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body class="theme-cyan">
+
+<!-- Page Loader -->
+<div class="page-loader-wrapper">
+    <div class="loader">
+        <div class="m-t-30"><img class="zmdi-hc-spin" src="assets/images/loader.svg" width="48" height="48" alt="Aero"></div>
+        <p>Đang tải...</p>
+    </div>
+</div>
+
+<!-- Overlay For Sidebars -->
+<div class="overlay"></div>
+
+<!-- Right Icon menu Sidebar -->
+<div class="navbar-right">
+    <ul class="navbar-nav">
+        <li class="dropdown">
+            <a href="javascript:void(0);" class="dropdown-toggle" title="Notifications" data-toggle="dropdown" role="button"><i class="zmdi zmdi-notifications"></i>
+                <div class="notify"><span class="heartbit"></span><span class="point"></span></div>
+            </a>
+            <ul class="dropdown-menu slideUp2">
+                <li class="header">Thông báo</li>
+                <li class="body">
+                    <ul class="menu list-unstyled">
+                        <li>
+                            <a href="javascript:void(0);">
+                                <div class="icon-circle bg-blue"><i class="zmdi zmdi-account"></i></div>
+                                <div class="menu-info">
+                                    <h4>Thông báo 1</h4>
+                                    <p><i class="zmdi zmdi-time"></i> 1 phút trước </p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0);">
+                                <div class="icon-circle bg-amber"><i class="zmdi zmdi-shopping-cart"></i></div>
+                                <div class="menu-info">
+                                    <h4>Thông báo 2</h4>
+                                    <p><i class="zmdi zmdi-time"></i> 15 phút trước </p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0);">
+                                <div class="icon-circle bg-red"><i class="zmdi zmdi-delete"></i></div>
+                                <div class="menu-info">
+                                    <h4> Thông báo 3</h4>
+                                    <p><i class="zmdi zmdi-time"></i> 29 phút trước </p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0);">
+                                <div class="icon-circle bg-green"><i class="zmdi zmdi-edit"></i></div>
+                                <div class="menu-info">
+                                    <h4>Thông báo 4</h4>
+                                    <p><i class="zmdi zmdi-time"></i> 34 phút trước </p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0);">
+                                <div class="icon-circle bg-grey"><i class="zmdi zmdi-comment-text"></i></div>
+                                <div class="menu-info">
+                                    <h4>Thông báo 5</h4>
+                                    <p><i class="zmdi zmdi-time"></i> 48 phút trước </p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0);">
+                                <div class="icon-circle bg-purple"><i class="zmdi zmdi-refresh"></i></div>
+                                <div class="menu-info">
+                                    <h4>Thông báo 6</h4>
+                                    <p><i class="zmdi zmdi-time"></i> 50 phút trước </p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li><a href="javascript:void(0);" class="js-right-sidebar" title="Setting"><i class="zmdi zmdi-settings zmdi-hc-spin"></i></a></li>
+        <li><a href="dangnhap.html" class="mega-menu" title="Sign Out"><i class="zmdi zmdi-power"></i></a></li>
+    </ul>
+</div>
+
+<!-- Left Sidebar -->
+<aside id="leftsidebar" class="sidebar">
+    <div class="navbar-brand">
+        <button class="btn-menu ls-toggle-btn" type="button"><i class="zmdi zmdi-menu"></i></button>
+        <a href="danhsachbanve.html"><img src="assets/images/logo.svg" width="25" alt="Aero"><span class="m-l-10">Quản trị</span></a>
+    </div>
+    <div class="menu">
+        <ul class="list">
+            <li>
+                <div class="user-info">
+                    <a class="image" href="profile.html"><img src="assets/images/profile_av.jpg" alt="User"></a>
+                    <div class="detail">
+                        <h4>Huy Hoàng</h4>
+                        <small>Quản trị viên</small>                        
+                    </div>
+                </div>
+            </li>
+            <li><a href="index.html"><i class="zmdi zmdi-home"></i><span>Trang chủ</span></a></li>
+            <li><a href="javascript:void(0);" class="menu-toggle"><i class="zmdi zmdi-apps"></i><span>Quản lý bản vẽ</span></a>
+                <ul class="ml-menu">
+                    <li><a href="danhsachbanve.html">Danh sách bản vẽ</a></li>      
+                    <li><a href="chitietbanve.html">Chi tiết bản vẽ</a></li>               
+                </ul>
+            </li>
+            <li class="active open"><a href="javascript:void(0);"><i class="zmdi zmdi-assignment"></i><span>Quản lý văn bản</span></a></li>
+        </ul>
+    </div>
+</aside>
+
+<!-- Right Sidebar -->
+<aside id="rightsidebar" class="right-sidebar">
+    <ul class="nav nav-tabs sm">
+        <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#setting"><i class="zmdi zmdi-settings zmdi-hc-spin"></i></a></li>
+    </ul>
+    <div class="tab-content">
+        <div class="tab-pane active" id="setting">
+            <div class="slim_scroll">
+                <div class="card">
+                    <h6>Giao diện</h6>
+                    <div class="light_dark">
+                        <div class="radio">
+                            <input type="radio" name="radio1" id="lighttheme" value="light" checked="">
+                            <label for="lighttheme">Chế độ sáng</label>
+                        </div>
+                        <div class="radio mb-0">
+                            <input type="radio" name="radio1" id="darktheme" value="dark">
+                            <label for="darktheme">Chế độ tối</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <h6>Màu nền</h6>
+                    <ul class="choose-skin list-unstyled">                 
+                        <li data-theme="blue"><div class="blue"></div></li>
+                        <li data-theme="cyan" class="active"><div class="cyan"></div></li>
+                        <li data-theme="green"><div class="green"></div></li>
+                    </ul>                    
+                </div>          
+            </div>                
+        </div>
+    </div>
+</aside>
+
+<section class="content">
+    <div class="body_scroll">
+        <div class="block-header">
+            <div class="row">
+                <div class="col-lg-7 col-md-6 col-sm-12">
+                    <h2>Văn bản đến</h2>
+                    <ul class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="index.html"><i class="zmdi zmdi-home"></i> Trang chủ</a></li>
+                        <li class="breadcrumb-item active">Văn bản đi</li>
+                    </ul>
+                    <button class="btn btn-primary btn-icon mobile_menu" type="button"><i class="zmdi zmdi-sort-amount-desc"></i></button>
+                </div>
+                <div class="col-lg-5 col-md-6 col-sm-12">
+                    <button class="btn btn-primary btn-icon float-right right_icon_toggle_btn" type="button"><i class="zmdi zmdi-arrow-right"></i></button>                                
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row clearfix">
+                <div class="col-md-12">
+                    <div class="d-flex">
+                        <div class="mobile-left">
+                            <a class="btn btn-info btn-icon toggle-email-nav collapsed" data-toggle="collapse" href="#email-nav" role="button" aria-expanded="false" aria-controls="email-nav">
+                                <span class="btn-label"><i class="zmdi zmdi-more"></i></span>
+                            </a>
+                        </div>
+                        <div class="inbox left" id="email-nav">
+                            <div class="mail-compose mb-4">
+                                <a href="vanban-gui.html" class="btn btn-danger btn-block">Gửi văn bản</a>
+                            </div>
+                            <div class="mail-side">
+                                <ul class="nav">
+                                    <li><a href="vanban-den.html"><i class="zmdi zmdi-inbox"></i>Văn bản đến</a></li>
+                                    <li class="active"><a href="vanban-di.html"><i class="zmdi zmdi-mail-send"></i>Văn bản đã gửi</a></li>
+                                    <li><a href="javascript:void(0);"><i class="zmdi zmdi-delete"></i>Đã xóa</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="inbox right">
+                            <div class="i_action d-flex justify-content-between align-items-center">
+                                <div class="">
+                                    <div class="checkbox simple d-inline-block mr-3">
+                                        <input id="mc0" type="checkbox">
+                                        <label for="mc0"></label>
+                                    </div>
+                                    <div class="btn-group">
+                                        <a href="javascript:void(0);" class="btn btn-outline-secondary btn-sm"><i class="zmdi zmdi-refresh"></i></a>
+                                        <a href="javascript:void(0);" class="btn btn-outline-secondary btn-sm"><i class="zmdi zmdi-archive"></i></a>
+                                        <a href="javascript:void(0);" class="btn btn-outline-secondary btn-sm"><i class="zmdi zmdi-delete"></i></a>
+                                    </div>
+                                    <div class="btn-group">
+                                        <button class="btn btn-outline-secondary btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Lọc</button>
+                                        <div class="dropdown-menu">
+                                            <a class="dropdown-item" href="javascript:void(0);">Nhãn 1</a>
+                                            <a class="dropdown-item" href="javascript:void(0);">Nhãn 2</a>
+                                            <a class="dropdown-item" href="javascript:void(0);">Nhãn 3</a>
+                                        </div>
+                                    </div>
+                                    <div class="btn-group">
+                                        <button class="btn btn-outline-secondary btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Tùy chọn</button>
+                                        <div class="dropdown-menu">
+                                            <a class="dropdown-item" href="javascript:void(0);">Đánh dấu đã xem</a>
+                                            <a class="dropdown-item" href="javascript:void(0);">Đánh dấu chưa xem</a>
+                                            <div role="separator" class="dropdown-divider"></div>
+                                            <a class="dropdown-item" href="javascript:void(0);">Xóa</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="table-responsive">
+                                <table class="table table-striped m-b-0">
+                                    <thead>
+                                        <tr class="bg-cyan">
+                                            <th>STT</th>
+                                            <th>Tên văn bản</th>
+                                            <th>Số ký hiệu</th>
+                                            <th>Thời gian ban hành</th>
+                                            <th>Độ mật</th>
+                                            <th>Loại danh mục</th>
+                                        </tr>
+                                    </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td>001
+                                            </td> 
+                                            <td>Tên văn bản 1</td>
+                                            <td>123123</td>
+                                            <td>20/08/2021</td>
+                                            <td>Tuyệt mật</td>
+                                            <td>Danh mục 1</td>
+                                        </tr>
+                                        <tr>
+                                            <td>001
+                                            </td> 
+                                            <td>Tên văn bản 2</td>
+                                            <td>123123</td>
+                                            <td>20/08/2021</td>
+                                            <td>Tuyệt mật</td>
+                                            <td>Danh mục 1</td>
+                                        </tr>
+                                        <tr>
+                                            <td>001
+                                            </td> 
+                                            <td>Tên văn bản</td>
+                                            <td>123123</td>
+                                            <td>20/08/2021</td>
+                                            <td>Tuyệt mật</td>
+                                            <td>Danh mục 1</td>
+                                        </tr>
+                                        <tr>
+                                            <td>001
+                                            </td> 
+                                            <td>Tên văn bản</td>
+                                            <td>123123</td>
+                                            <td>20/08/2021</td>
+                                            <td>Tuyệt mật</td>
+                                            <td>Danh mục 1</td>
+                                        </tr>
+                                        <tr>
+                                            <td>001
+                                            </td> 
+                                            <td>Tên văn bản</td>
+                                            <td>123123</td>
+                                            <td>20/08/2021</td>
+                                            <td>Tuyệt mật</td>
+                                            <td>Danh mục 1</td>
+                                        </tr>
+                                        <tr>
+                                            <td>001
+                                            </td> 
+                                            <td>Tên văn bản 0</td>
+                                            <td>123123</td>
+                                            <td>20/08/2021</td>
+                                            <td>Tuyệt mật</td>
+                                            <td>Danh mục 1</td>
+                                        </tr>
+                                        <tr>
+                                            <td>001
+                                            </td> 
+                                            <td>Tên văn bản</td>
+                                            <td>123123</td>
+                                            <td>20/08/2021</td>
+                                            <td>Tuyệt mật</td>
+                                            <td>Danh mục 1</td>
+                                        </tr>
+                                        <tr>
+                                            <td>001
+                                            </td> 
+                                            <td>Tên văn bản</td>
+                                            <td>123123</td>
+                                            <td>20/08/2021</td>
+                                            <td>Tuyệt mật</td>
+                                            <td>Danh mục 1</td>
+                                        </tr>
+                                        <tr>
+                                            <td>001
+                                            </td> 
+                                            <td>Tên văn bản</td>
+                                            <td>123123</td>
+                                            <td>20/08/2021</td>
+                                            <td>Tuyệt mật</td>
+                                            <td>Danh mục 1</td>
+                                        </tr>
+                                        <tr>
+                                            <td>001
+                                            </td> 
+                                            <td>Tên văn bản</td>
+                                            <td>123123</td>
+                                            <td>20/08/2021</td>
+                                            <td>Tuyệt mật</td>
+                                            <td>Danh mục 1</td>
+                                        </tr>
+                                        <tr>
+                                            <td>001
+                                            </td> 
+                                            <td>Tên văn bản</td>
+                                            <td>123123</td>
+                                            <td>20/08/2021</td>
+                                            <td>Tuyệt mật</td>
+                                            <td>Danh mục 1</td>
+                                        </tr>
+                                        <tr>
+                                            <td>001
+                                            </td> 
+                                            <td>Tên văn bản</td>
+                                            <td>123123</td>
+                                            <td>20/08/2021</td>
+                                            <td>Tuyệt mật</td>
+                                            <td>Danh mục 1</td>
+                                        </tr>
+                                        <tr>
+                                            <td>001
+                                            </td> 
+                                            <td>Tên văn bản</td>
+                                            <td>123123</td>
+                                            <td>20/08/2021</td>
+                                            <td>Tuyệt mật</td>
+                                            <td>Danh mục 1</td>
+                                        </tr>
+                                        <tr>
+                                            <td>001
+                                            </td> 
+                                            <td>Tên văn bản</td>
+                                            <td>123123</td>
+                                            <td>20/08/2021</td>
+                                            <td>Tuyệt mật</td>
+                                            <td>Danh mục 1</td>
+                                        </tr>
+                                        <tr>
+                                            <td>001
+                                            </td> 
+                                            <td>Tên văn bản</td>
+                                            <td>123123</td>
+                                            <td>20/08/2021</td>
+                                            <td>Tuyệt mật</td>
+                                            <td>Danh mục 1</td>
+                                        </tr>
+                                        <tr>
+                                            <td>001
+                                            </td> 
+                                            <td>Tên văn bản</td>
+                                            <td>123123</td>
+                                            <td>20/08/2021</td>
+                                            <td>Tuyệt mật</td>
+                                            <td>Danh mục 1</td>
+                                        </tr>
+                                        <tr>
+                                            <td>001
+                                            </td> 
+                                            <td>Tên văn bản</td>
+                                            <td>123123</td>
+                                            <td>20/08/2021</td>
+                                            <td>Tuyệt mật</td>
+                                            <td>Danh mục 1</td>
+                                        </tr>
+                                        <tr>
+                                            <td>001
+                                            </td> 
+                                            <td>Tên văn bản</td>
+                                            <td>123123</td>
+                                            <td>20/08/2021</td>
+                                            <td>Tuyệt mật</td>
+                                            <td>Danh mục 1</td>
+                                        </tr>
+                                        <tr>
+                                            <td>001
+                                            </td> 
+                                            <td>Tên văn bản</td>
+                                            <td>123123</td>
+                                            <td>20/08/2021</td>
+                                            <td>Tuyệt mật</td>
+                                            <td>Danh mục 1</td>
+                                        </tr>
+                                        <tr>
+                                            <td>001
+                                            </td> 
+                                            <td>Tên văn bản</td>
+                                            <td>123123</td>
+                                            <td>20/08/2021</td>
+                                            <td>Tuyệt mật</td>
+                                            <td>Danh mục 1</td>
+                                        </tr>
+                                        <tr>
+                                            <td>001
+                                            </td> 
+                                            <td>Tên văn bản</td>
+                                            <td>123123</td>
+                                            <td>20/08/2021</td>
+                                            <td>Tuyệt mật</td>
+                                            <td>Danh mục 1</td>
+                                        </tr>
+                                        <tr>
+                                            <td>001
+                                            </td> 
+                                            <td>Tên văn bản</td>
+                                            <td>123123</td>
+                                            <td>20/08/2021</td>
+                                            <td>Tuyệt mật</td>
+                                            <td>Danh mục 1</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Jquery Core Js -->
+<script src="assets/bundles/libscripts.bundle.js"></script>
+<script src="assets/bundles/vendorscripts.bundle.js"></script>
+
+<script src="assets/bundles/footable.bundle.js"></script> <!-- Lib Scripts Plugin Js -->
+
+<script src="assets/bundles/mainscripts.bundle.js"></script>
+<script src="assets/js/pages/tables/footable.js"></script><!-- Custom Js -->
+</body>
+
+</html>
